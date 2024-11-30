@@ -74,7 +74,6 @@ int main(){
 
     // printf("%f\n",A);
     // printf("%f\n",B);
-    // printf("%d\n",R);
-
+    /// printf("%d\n",R);
     return 0;
 }
