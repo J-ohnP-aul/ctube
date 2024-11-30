@@ -75,5 +75,6 @@ int main(){
     // printf("%f\n",A);
     // printf("%f\n",B);
     /// printf("%d\n",R);
+    // logical op &&-takes moer ond nit fst 2 || !=
     return 0;
 }
