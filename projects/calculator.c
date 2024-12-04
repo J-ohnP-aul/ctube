@@ -18,18 +18,22 @@ int main()
     switch(operator){
         case '+':
             result = num1 + num2;
+            printf("\n%.2lf%c%.2lf", num1,operator,num2);
             printf("\nresult :%.2lf",result);
             break;
         case '-':
             result = num1 - num2;
+            printf("\n%.2lf%c%.2lf", num1,operator,num2);
             printf("\nresult :%.2lf",result);
             break;
         case '/':
             result = num1 / num2;
+            printf("\n%.2lf%c%.2lf", num1,operator,num2);
             printf("\nresult :%.2lf",result);
             break;
         case '*':
             result = num1 * num2;
+            printf("\n%.2lf%c%.2lf", num1,operator,num2);
             printf("\nresult :%.2lf",result);
             break;
         default:

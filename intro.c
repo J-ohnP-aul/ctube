@@ -1,6 +1,13 @@
 #include<stdio.h>
 //#include<stdbool.h> to work with boolean
 #include<math.h>
+
+// void birthday(char x[], int y){
+//     printf("\nHappy birthday to you!");
+//     printf("\nHow old are you now %d", y);
+//     printf("\nHappy birthday dear %s", x);
+//     printf("\nHappy birthday to you!");
+// }
 int main(){
     // printf("Ilove coding \n");
     // printf("I am disciplene\n");
@@ -76,5 +83,14 @@ int main(){
     // printf("%f\n",B);
     /// printf("%d\n",R);
     // logical op &&-takes moer ond nit fst 2 || !=
+    // if (temp==22 && temp>12) 
+    // sunny = true !sunny = false
+    
+    //function
+// declared outside the int main
+    // char name[] = "johnPaul";
+    // int age = 20;
+
+    // birthday(name, age);
     return 0;
 }
