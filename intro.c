@@ -1,6 +1,7 @@
 #include<stdio.h>
 //#include<stdbool.h> to work with boolean
 #include<math.h>
+#include<string.h>
 
 // void birthday(char x[], int y){
 //     printf("\nHappy birthday to you!");
@@ -21,7 +22,7 @@ int main(){
     // float weight = 66.7; //float
     // char grade = 'B'; //character
     // char name[] = "Noble programmers"; //to emulate strings many char in an array
-    // double pi = 3.14233535366; //more acurate than floats fomat S %lf
+    // double pi = 3.14233535366; //more acurate than floats fomat S %lf uses 8bytes
     // bool dcpln = false; //import stdbool otuput 1 true 0 false 
     // char f = 100; //int -127 - 127 oupt  decimal int char(using asciitable)
     // unsigned char C = 255; //0-255 %d or %c
@@ -92,5 +93,102 @@ int main(){
     // int age = 20;
 
     // birthday(name, age);
+    //nested loop//
+    // int rows,columns;
+    // char symbol;
+    // printf("enter number of raws, column and symbol respectivly\n ");
+    // scanf("%i %d %c",&rows,&columns,&symbol);
+
+    // for(int i = 1; i<=rows; i++){
+    //     for(int j=1; j<=columns; j++){
+    //         printf("%c",symbol);
+    //     }
+    //     printf("\n");
+    // }
+    //continue = skip the rest section and force nxt iteration
+    //break = exit out of loop entirely
+
+            // for(int i = 1;i<=20;i++){
+            //     if(i==13){
+            //         continue;
+            //     }
+            //     printf("%d\n",i);
+            // }
+            //     for(int i = 1;i<=20;i++){
+            //     if(i==13){
+            //         break;
+            //     }
+            //     printf("%d\n",i);
+            // }
+    // array - homo genious data structure
+    // double prices[] = {5.0, 10.3, 23.3, 11.5};//if u know the number of ch else
+
+        // double prices[5];
+        // prices[0] =12.2;
+        // prices[1] =13.4;
+        // prices[2] =21.5;
+        // prices[3] =16.74;
+        // prices[4] =19.33;
+        
+        // printf("$%.2lf", prices[1]);//access ing value
+//looping ana array
+    // double prices[] = {5.0, 10.3, 23.3, 11.5, 11.3, 32.6};
+    // //printf("%d bytes\n",sizeof(prices));
+
+    // for(int i=0; i<sizeof(prices)/sizeof(prices[0]); i++){
+    //     printf("\n$%.2lf", prices[i]);
+    // }
+
+//   //2D array
+//in 2d one must incliude max size of elm
+    // int numbers[2][3] = {
+    //     {1, 2, 3},
+    //     {4, 5, 6}
+    //     };
+
+    // int number[3][3];
+
+    // number[0][0] = 1;
+    // number[0][1] = 2;
+    // number[0][2] = 3;
+    // number[1][0] = 4;
+    // number[1][1] = 5;
+    // number[1][2] = 6;
+    // number[1][0] = 7;
+    // number[1][1] = 8;
+    // number[1][2] = 9;
+
+    // int rows = sizeof(number)/sizeof(number[0]);
+    // int columns = sizeof(number[0])/sizeof(number[0][0]);
+    // printf("rows: %d\n columns: %d",rows,columns);
+    // for (int i=0; i<rows; i++){
+    //     for(int j=0; j<columns; j++){
+    //         printf("%d", number[i][j]);
+    //     }
+    //     printf("\n");
+    // }
+
+// //array of strings
+//     char cars[][10] = {"Mustang","mercedes","BMW"};//strings are arrays
+
+//     strcpy(cars[0], "Tesla");//to update or edit one item
+
+//     for(int i = 0; i< sizeof(cars)/sizeof(cars[0]); i++){
+//         printf("%s\n", cars[i]);
+//     }
+    
+// swapping variables
+
+    char x = 'X';
+    char y = 'Y';
+    char temp;
+
+    temp = x;
+    x = y;
+    y = temp;
+
+    printf("x = %c \n",x);
+    printf("y = %c \n",y);
+
     return 0;
 }
