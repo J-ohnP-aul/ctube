@@ -177,18 +177,19 @@ int main(){
 //         printf("%s\n", cars[i]);
 //     }
     
-// swapping variables
+// swapping two variables
 
-    char x = 'X';
-    char y = 'Y';
-    char temp;
+    // char x [15] = "water";
+    // char y[15] = "soda";
+    // char temp[15];
 
-    temp = x;
-    x = y;
-    y = temp;
+    // strcpy(temp, x);
+    // strcpy(x, y);
+    // strcpy(y, temp);i
 
-    printf("x = %c \n",x);
-    printf("y = %c \n",y);
+    // printf("x = %s \n",x);
+    // printf("y = %s \n",y);
+
 
     return 0;
 }
