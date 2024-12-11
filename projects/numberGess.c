@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<time.h>
 
-#define Type(x)_Generic((x),int: "int",char: "char")
+#define Type(x)_Generic((x),int: "int",char[2]: "char")
 
 
 int main ()
@@ -21,17 +21,22 @@ int main ()
     do{
         printf("\nEnter a guess: ");
         scanf("%d", &guess);
-        if(guess > answer)
-        {
-            printf("Too high sorry");
-        }
-        else if(guess < answer)
-        {
-            printf("too low man");
-        }
-        else{
-            printf("CORRECT !!\n");
-        }
+        // if(Type(guess) == "char"){
+        //     printf("!!***!!!***WRONG INPUT***!!!**!!")
+        // }else{
+            guess = (int)guess;
+            if(guess > answer)
+            {
+                printf("Too high sorry");
+            }
+            else if(guess < answer)
+            {
+                printf("too low man");
+            }
+            else{
+                printf("CORRECT !!\n");
+            }
+        
         guesses++;
     }while(guess != answer);
 
