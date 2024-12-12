@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 #include<stdlib.h>
 #include<time.h>
 
@@ -12,13 +13,17 @@ int main ()
     int guess;
     int guesses = 0;
     int answer;
+    char iq;
+    char iq1[] = "lower";
+    char iq2[] = "middle";
+    char iq3[] = "high";
 
     srand(time(0));
 
     answer = (rand() % MAX) + MIN;
     // printf("%d",answer);
 
-    do{
+    while(guess != answer){
         printf("\nEnter a guess: ");
         scanf("%d", &guess);
         // if(Type(guess) == "char"){
@@ -38,13 +43,28 @@ int main ()
             }
         
         guesses++;
-    }while(guess != answer);
+    };
 
-    printf("************************\n");
-    printf("answer: %d\n", answer);
-    printf("guesses: %d\n", guesses);
-    printf("************************");
+    if(guesses < 20){        
+        printf("************************\n");
+        printf("answer: %d\nYour iq level is a little bit: %s\n", answer, iq3);
+        printf("guesses: %d\n", guesses);
+        printf("************************");
+    }else if (guesses > 20 && guesses < 30)
+    {
+        printf("************************\n");
+        printf("answer: %d\nYour iq level is in the %s\n", answer, iq2);
+        printf("guesses: %d\n", guesses);
+        printf("************************");
+    }else{
+        printf("************************\n");
+        printf("answer: %d\nYour iq level is alittle bit: %s\n", answer, iq1);
+        printf("guesses: %d\n", guesses);
+        printf("************************");
+    }
 
+
+    
 
     return 0;
 }
