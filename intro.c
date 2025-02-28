@@ -190,6 +190,22 @@ int main(){
     // printf("x = %s \n",x);
     // printf("y = %s \n",y);
 
+// for loop without inititialataton 
+    // int i = 0;
+    // for(; i<=10; i++){
+    //     printf("%d\n",i);
+    // }
+//nested loop
+   
+    for (int i=0; i<=5; i++)
+    {
+        printf("\n%d\t",i);
+        for (int j=6; j<=10; j++)
+            {
+                printf("%d",j);
+            }
+    }
+    
 
     return 0;
 }

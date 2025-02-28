@@ -10,7 +10,7 @@ int main ()
     //enum = a user defined type of named integer identifiers help to make a programm more redable;
     //can b dclared nside or out of miain func NB they are consts
     
-    enum Day today = Mon;
+    enum Day today = Sat;
 
     // printf("%d", today); enums are not strings but can be treated as integers
 

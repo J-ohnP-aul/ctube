@@ -2,6 +2,12 @@
 #include<string.h>
 
 // typedef char user[25];
+// struct user           --normal way
+// {
+//     char name[25];
+//     char password[12];
+//     int id;
+// };
 
 typedef struct 
 {
@@ -15,7 +21,7 @@ int main()
     //typedef = reserverd keyword thatgives an existing data type a "nickname"
     
     // user user1 = "noble";
-    // struct user user1 = {"noble", "nasa", 23065775};
+    // struct user user1 = {"noble", "nasa", 23065775}; --normal way
 
     user user1 = {"noble", "nasa", 23065775};
     user user2 = {"engPJ", "codex", 4654545};

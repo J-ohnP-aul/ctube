@@ -1,39 +1,40 @@
 #include<stdio.h>
 #include<string.h>
-
-void sort(int array[], int size){
-    for(int i=0; i < size - 1; i++)
-    {
-        for(int j=0; j < size - 1; j++)
-        {
-            if(array[j] > array[j + 1])
-            {
-                int temp = array[j];
-                array[j] = array[j + 1];
-                array[j + 1] = temp;
-            }
-        }    
-    }
-
-}
-void printAray(int array[], int size){
-    for(int i=0; i<size; i++)
-    {
-        printf("%d", array[i]);
-    }
-}
-
-
-int main()
+//change dttpyes from int to char
+void sort( char array[], int size)
 {
+    for(int i=0; i<size-1; i++)
+    {
+        for(int j=0; j<size-i-1; j++)
+        {
+            int temp = (array[j]<array[j + 1])?array[j]:array[j+1];
+            // if(array[j]<array[j + 1])
+            // {
+            //     temp = array[j];
+            //     array[j] = array[j+1];
+            //     array[j+1] = temp;
+            // }
+        }
+    }
+}
+void printArray(char array[], int size)
+{
+    for(int i = 0; i<size; i++)
+    {
+        printf("%c ", array[i]);
+    }
+
+}
+
+int main ()
+{
+    // int array[] = {22,43,65,78,112,34,4,5,75,13,11};
+    char array[] = {'A', 'B', 'C', 'X', 'T', 'Z'};
+    int size = sizeof(array)/sizeof(array[0]);
     
-    //sorting arary elms
-
-     int array[] = {2,3,7,9,5,8,4};
-     int size = sizeof(array)/sizeof(array[0]);
-
-    sort(array, size);
-    printAray(array, size);
+    sort(array,size);
+    printArray(array, size);
 
     return 0;
 }
+

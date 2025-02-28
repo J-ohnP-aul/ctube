@@ -5,6 +5,9 @@ int main()
 {
     char strg1[] = "noble";
     char strng2[] = "paul";
+
+    //strings are declared using double quotes while char single quotes
+    
     //strlwr() to lowercase
     //strupr() to upper case
    // strcat(strg1, strng2);// combines strings 
