@@ -5,6 +5,7 @@ int main()
 {
     char strg1[] = "noble";
     char strng2[] = "paul";
+    strupr(strg1);
 
     //strings are declared using double quotes while char single quotes
     
@@ -17,5 +18,5 @@ int main()
     // strset(strg1, "!"); //sets all str1 charr to |1|
     // strnset(strg1, "!", 2); //sets first n char of strn1 to the given char
     // strrev(strg1); //reverse strng
-    printf("%s", strg1);
+    printf("%s", strg1 );
 }

@@ -15,8 +15,11 @@ int main()
     
     struct player player1;
     struct player player2;
+    char[20] name;
+    printf("enter name: ");
+    scanf("%c",name);
 
-    strcpy(player1.name, "johnPaul");
+    // strcpy(player1.name, "johnPaul");
     strcpy(player2.name, "nobles");
 
 

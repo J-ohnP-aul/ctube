@@ -8,7 +8,7 @@ int main()
     // prices[8] = 35;
     prices[5] = 77;
 
-    for(int i = 0; i < sizeof(prices)/sizeof(prices[0]); i++)
+    for(int i = 0; i < sizeof(prices)/sizeof(double); i++)
     {
         printf("$%.2f\n", prices[i]);
 
