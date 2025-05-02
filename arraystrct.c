@@ -7,6 +7,7 @@ typedef struct Student
     float gpa;
 
 }std;
+void processStd(std *);
 int main()
 {   
     struct Student student1 = {"spongebob", 3.0};
@@ -23,6 +24,21 @@ int main()
         printf("%-12s\t",studendts[i].name);//-12 left justify
         printf("%.2f\n",studendts[i].gpa);
     }
+    printf("\npassing the array\n\n");
+    processStd(studendts);//arrays are pointers themselves they are passed in diferently
+    for(int i=0; i<6; i++)
+    {
+        printf("%-12s\t",studendts[i].name);//-12 left justify
+        printf("%.2f\n",studendts[i].gpa);
+    }
+
 
     return 0;
+}
+void processStd(std *s){
+    strcpy(s[4].name, "Mr crabs");
+    s[4].gpa = 6;
+    strcpy(s[0].name, "plankton");
+    s[0].gpa = 5;
+
 }
