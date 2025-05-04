@@ -28,7 +28,7 @@ int main()
     processStd(studendts);//arrays are pointers themselves they are passed in diferently
     for(int i=0; i<6; i++)
     {
-        printf("%-12s\t",studendts[i].name);//-12 left justify
+        printf("%-12s\t",student1.name);//-12 left justify
         printf("%.2f\n",studendts[i].gpa);
     }
 
